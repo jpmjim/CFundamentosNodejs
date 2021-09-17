@@ -1,0 +1,3 @@
+Hola a todos prueba de 
+
+leer un archivo por metodos.
