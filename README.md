@@ -109,3 +109,10 @@ Los callback Hell se dan cuando empiezo a pasar una función como parámetro que
 Una estrategia para trabajar con estas estructuras lógicas tan monolíticas es usar estructuras de control y funciones recursivas.
 
 Las funciones recursivas se llaman así mismas y mediante la estructura de control le digo cuantas veces voy a necesitar llamar la función así misma.
+
+9.-Promesas
+Las promesas vienen de los callbacks, pero las promesas lo que hacen es dar un estado.
+Las promesas son una “clase” global que podemos llamar de donde sea, nuestras funciones devuelvan promesas
+Promise(), la diferenia entre promises y callbacks es la capacidad de anidar promesas. Formando una cadena de promesas.
+Es muy útil para visualizar código asíncrono de manera síncrona.
+
