@@ -104,3 +104,8 @@ La funcion que recibe como argumento otras funciones es denominada funcion de or
 
 En el siguiente codigo
 
+8.-Callback Hell: refactorizar o sufrir
+Los callback Hell se dan cuando empiezo a pasar una función como parámetro que a su vez llama a otra función como parámetro, y así hasta n.
+Una estrategia para trabajar con estas estructuras lógicas tan monolíticas es usar estructuras de control y funciones recursivas.
+
+Las funciones recursivas se llaman así mismas y mediante la estructura de control le digo cuantas veces voy a necesitar llamar la función así misma.
