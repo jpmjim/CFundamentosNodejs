@@ -116,3 +116,8 @@ Las promesas son una “clase” global que podemos llamar de donde sea, nuestra
 Promise(), la diferenia entre promises y callbacks es la capacidad de anidar promesas. Formando una cadena de promesas.
 Es muy útil para visualizar código asíncrono de manera síncrona.
 
+10.-Async/await
+Para evitar que todo se vea asíncrono, y que la sintáxis sea más legible las operaciones secuenciales como hacer un archivo que se procese, subirlo para tener una URL y de ahí mandarla a una base de datos.
+Async y Await nos permite definir una función de forma explícita como asíncrona y esperar a que la función termine. No estará bloqueando el hilo principal, pues estará esperando a que se resuelva con el event loop.
+
+
