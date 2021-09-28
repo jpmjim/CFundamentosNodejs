@@ -126,3 +126,71 @@ POSIX es el estándar para interfaces de comando y shell, las siglas las signifi
 
 El file system nos permite acceder archivo del sistema, leer, modificar., escribirlos, es muy útil para precompiladores, para lo que requiera hacer grabados de disco, o bases de datos en node requieren un uso intensivo de Node.Todo lo que hagamos con modulos por buenas prácticas son asincronos, pero tienen una version sincrona no recomendada pues pordría bloquear el event loop con más facilidad.
 
+13.-Console
+Con console podemos imprimir todo tipo de valores por
+nuestra terminal.
+
+    console.log: recibe cualquier tipo y lo muestra en el consola.
+    console.info: es equivalente a log pero es usado para informar.
+    console.error: es equivalente a log pero es usado para errores.
+    console.warn: es equivalente a log pero es usado para warning.
+    console.table: muestra una tabla a partir de un objeto.
+    console.count: inicia un contador autoincremental.
+    console.countReset: reinicia el contador a 0.
+    console.time: inicia un cronometro en ms.
+    console.timeEnd: Finaliza el cronometro.
+    console.group: permite agrupar errores mediante identación.
+    console.groupEnd: finaliza la agrupación.
+    console.clear: Limpia la consola.
+
+15.-Procesos hijo
+El módulo de procesos secundarios de Node.js (child_process) tiene dos funciones spawn y exec, mediante las cuales podemos iniciar un proceso secundario para ejecutar otros programas en el sistema.
+
+La diferencia más significativa entre child_process.spawn y child_process.exec está en lo que spawn devuelve un stream y exec devuelve un buffer.
+
+    Usa spawn cuando quieras que el proceso hijo devuelva datos binarios enormes a Node.
+    Usa exec cuando quieras que el proceso hijo devuelva mensajes de estado simples.
+    Usa spawn cuando quieras recibir datos desde que el proceso arranca.
+    Usa exec cuando solo quieras recibir datos al final de la ejecución.
+
+17.-HTTP
+Node nos ofrece el modulo HTTP el cual nos permite principalmente crear un servidor en nuestro computador.
+En este modulo encontraremos todo lo necesario que necesitamos para crear un sistema de rutas, que responderá cada ruta, los header que podrá mandar, etc.
+Uno de los métodos principales de este modulo es createServer, el cual nos permitirá abrir un puerto para crear el servidor.
+
+18.-OS
+El modulo de Node para OS me permite acceder a elementos de muy bajo nivel, y es útil en diferentes contextos.
+const os = require('os');
+
+console.log(os.hostname());//  Voy a saber el hostname de la máquina
+console.log(os.networkInterfaces());// Puedo acceder a mi interfaz de red activas en mi máquina, puedo saber  IPVX
+console.log(os.tmpdir())//-->Me muestra los directorios temporales, temproales una imagen que voy a procesar
+console.log(os.homedir()) // Me permite saber cual es el directorio raíz
+console.log(os.arch()); //----> Me devuelve la arquitecura de mi OS
+console.log(os.platform());//---> Me dice en qué plataforma estoy
+console.log(os.cpus());//--->podemos acceder a la información de las cpus de mi pc.
+console.log(os.constants);//--->  Me muestran todos los errores de sistema.
+
+
+//Acceder a espacios de memoria es muy útil para saber si tengo a memoria suficiente para realizar esta operación.
+console.log(os.freemem());// ---> Me dice en bytes la memoria libre que tenemos
+// console.log(kb(os.freemem()));
+// console.log(mb(os.freemem()));
+// console.log(gb(os.freemem()));
+console.log(gb(os.totalmem())); // ---> Me muestra la memoria disponible del pc.
+
+const SIZE = 1024;
+function kb(bytes) { return bytes / SIZE }
+function mb(bytes) { return kb(bytes) / SIZE }
+function gb(bytes) { return mb(bytes) / SIZE }
+
+19.-Process
+El objecto process es una instancia de EventEmitter; podemos suscribirnos a el para escuchar eventos de node. Es modulo global.
+UncaughtException: Permite capturar cualquier error que no fue caputurado previamente. Esto evita que Node cierre todos los hijos al encontrar un error no manejado.
+process.on('uncaughtException', (error, origen) => console.log(error, origen));
+
+exit: Se ejecuta cuando node detiene el eventloop y cierra su proceso principal.
+process.on('exit', () => console.log('Adios'));
+
+
+20.-Gestión de paquetes: NPM y package.json
