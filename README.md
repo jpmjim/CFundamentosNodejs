@@ -232,7 +232,6 @@ Web scraping es una técnica utilizada mediante programas de software para extra
 30.-Automizacion de procesos
 herramientas a usar son 
 npm i gulp gulp-server-livereload
-corremos nuestra tarea con "npm run build"
 para que funcione utilizar version anteriores de nodejs
 Un workaround rápido que encontré es simplemente cambiar la versión de node que se usa, si notan el profe está en Ubuntu pero usa una versión menor a la 14, para arreglarlo usé nvm cambiando la versión a una anterior.
 Después de instalado puedes correr
