@@ -225,3 +225,22 @@ asincrona((err, dato) => {
     }
     console.log(`Todo ha ido bien, mi dato es ${dato}`)
 })
+
+29.-Scraping
+Web scraping es una técnica utilizada mediante programas de software para extraer información de sitios web. Usualmente, estos programas simulan la navegación de un humano en la World Wide Web ya sea utilizando el protocolo HTTP manualmente, o incrustando un navegador en una aplicación.
+
+30.-Automizacion de procesos
+herramientas a usar son 
+npm i gulp gulp-server-livereload
+corremos nuestra tarea con "npm run build"
+para que funcione utilizar version anteriores de nodejs
+Un workaround rápido que encontré es simplemente cambiar la versión de node que se usa, si notan el profe está en Ubuntu pero usa una versión menor a la 14, para arreglarlo usé nvm cambiando la versión a una anterior.
+Después de instalado puedes correr
+"nvm use <otra versión, como 12.8.4>"
+nvm install 12.8.4
+
+
+GULP
+Es una herramienta de construcción en JavaScript construida sobre flujos de nodos . Estos flujos facilitan la conexión de operaciones de archivos a través de canalizaciones . Gulp lee el sistema de archivos y canaliza los datos disponibles de un complemento de un solo propósito a otro a través del .pipe()operador, haciendo una tarea a la vez. Los archivos originales no se ven afectados hasta que se procesan todos los complementos. Se puede configurar para modificar los archivos originales o para crear nuevos. Esto otorga la capacidad de realizar tareas complejas mediante la vinculación de sus numerosos complementos. Los usuarios también pueden escribir sus propios complementos para definir sus propias tareas.
+https://semaphoreci.com/community/tutorials/getting-started-with-gulp-js
+https://platzi.com/blog/automatizacion-gulp-js/
