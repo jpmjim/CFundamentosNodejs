@@ -243,3 +243,10 @@ GULP
 Es una herramienta de construcción en JavaScript construida sobre flujos de nodos . Estos flujos facilitan la conexión de operaciones de archivos a través de canalizaciones . Gulp lee el sistema de archivos y canaliza los datos disponibles de un complemento de un solo propósito a otro a través del .pipe()operador, haciendo una tarea a la vez. Los archivos originales no se ven afectados hasta que se procesan todos los complementos. Se puede configurar para modificar los archivos originales o para crear nuevos. Esto otorga la capacidad de realizar tareas complejas mediante la vinculación de sus numerosos complementos. Los usuarios también pueden escribir sus propios complementos para definir sus propias tareas.
 https://semaphoreci.com/community/tutorials/getting-started-with-gulp-js
 https://platzi.com/blog/automatizacion-gulp-js/
+
+31.-Aplicaciones de escritorio
+Con el uso de Electron
+npm i electron
+
+(conocido anteriormente como Atom Shell1​) es un framework de código abierto creado por Cheng Zhao, y ahora desarrollado por GitHub. Permite el desarrollo de aplicaciones gráficas de escritorio usando componentes del lado del cliente y del servidor originalmente desarrolladas para aplicaciones web: Node.js del lado del servidor y Chromium como interfaz. Electron es el framework gráfico detrás de muchos proyectos de código abierto importantes, incluyendo a Atom de GitHub​ y Microsoft Visual Studio Code. Wikipedia
+Aplicaciones que usan Electron: 💪 Visual Studio Code, Atom, Slack, WhatsApp, Skype, Twich, Signal, Github desktop.
